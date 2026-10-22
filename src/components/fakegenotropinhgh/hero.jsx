@@ -1,5 +1,4 @@
 import Button from "../global/button";
-import { IoLogoInstagram } from "react-icons/io5";
 const Hero = ({ title ,  text}) => {
   return (
     <div className=" bg-grid-lines  relative z-20 overflow-hidden  ">
@@ -14,12 +13,11 @@ const Hero = ({ title ,  text}) => {
               target="_blank"
               rel="noreferrer"
             />
-            <div className="mt-5">
-              <p className="mb-2 text-center">Follow us on</p>
-              <a href="mailto:fedyanasosovich@gmail.com" aria-label="Email">
-                <IoLogoInstagram size={34} className="text-darkPurple mx-auto" />
-              </a>
-            </div>
+            <Button
+              title="Contact"
+              containerClass="mt-5 px-10 py-2.5 font-bold"
+              href="mailto:fedyanasosovich@gmail.com"
+            />
         </div>
           <div className="max-w-2xl lg:text-start text-center flex flex-col gap-3 lg:mt-16">
             <h1 className="text-4xl lg:text-center  lg:text-6xl font-taviraj ">{title}</h1>
@@ -43,12 +41,11 @@ const Hero = ({ title ,  text}) => {
               target="_blank"
               rel="noreferrer"
             />
-            <div className="mt-5">
-              <p className="mb-2 text-center">Follow us on</p>
-              <a href="mailto:fedyanasosovich@gmail.com" aria-label="Email">
-                <IoLogoInstagram size={34} className="text-darkPurple mx-auto" />
-              </a>
-            </div>
+            <Button
+              title="Contact"
+              containerClass="mt-5 px-10 py-2.5 font-bold"
+              href="mailto:fedyanasosovich@gmail.com"
+            />
         </div>
         </div>
       </div>

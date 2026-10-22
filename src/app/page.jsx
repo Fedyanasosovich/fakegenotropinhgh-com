@@ -4,7 +4,6 @@ import Hero from "@/components/fakegenotropinhgh/hero";
 import DynamicSlider from "@/components/fakegenotropinhgh/dynamicSlider";
 import Button from "@/components/global/button";
 import Image from "next/image";
-import { IoLogoInstagram } from "react-icons/io5";
 
 // Import Swiper components (these will be client components)
 import ClientSideSwiper from "@/components/fakegenotropinhgh/ClientSideSwiper";
@@ -327,12 +326,11 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           />
-          <div className="mt-5">
-            <p className="mb-2 text-center">Follow us on</p>
-            <a href="mailto:fedyanasosovich@gmail.com" aria-label="Email">
-              <IoLogoInstagram size={34} className="text-darkPurple mx-auto" />
-            </a>
-          </div>
+          <Button
+            title="Contact"
+            containerClass="mt-5 px-10 py-2.5 font-bold"
+            href="mailto:fedyanasosovich@gmail.com"
+          />
         </div>
       </div>
     </>
